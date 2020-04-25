@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;obj&#x2F;machinery&#x2F;power&#x2F;supermatter_crystal - &#x2F;tg&#x2F; Station 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">&#x2F;tg&#x2F; Station 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="obj/machinery/power/supermatter_crystal.html#var">Var Details</a></header>
+<main>
+<h1>supermatter crystal <aside>/<a href="obj.html">obj</a>/<a href="obj/machinery.html">machinery</a>/<a href="obj/machinery/power/supermatter_crystal.html">power/supermatter_crystal</a></aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/2f8fbc28fe75e1d535de7b2cc92c86b0da811230/code/modules/power/supermatter/supermatter.dm#L99">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;power&#x2F;supermatter&#x2F;supermatter.dm 99"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="obj/machinery/power/supermatter_crystal.html#var/combined_gas">combined_gas</a></th><td>The last air sample's total molar count, will always be above or equal to 0</td></tr>
+            <tr><th><a href="obj/machinery/power/supermatter_crystal.html#var/freonbonus">freonbonus</a></th><td>it allows us to remove the power generation while freon is inside the chamber</td></tr>
+            <tr><th><a href="obj/machinery/power/supermatter_crystal.html#var/gas_change_rate">gas_change_rate</a></th><td>Determines the rate of positve change in gas comp values</td></tr>
+            <tr><th><a href="obj/machinery/power/supermatter_crystal.html#var/h2obonus">h2obonus</a></th><td>used when calculating if the heat resitance from h2o is applied</td></tr>
+            <tr><th><a href="obj/machinery/power/supermatter_crystal.html#var/h2ofixed">h2ofixed</a></th><td>fix for the heat penalty, making it work differently at different %</td></tr>
+            <tr><th><a href="obj/machinery/power/supermatter_crystal.html#var/h2omalus">h2omalus</a></th><td>used when calculating if the h2o &quot;malus&quot; is applied, the malus is an increase in power, waste gases and heat (wich is bad if not ready) also now used when calculating amount of radiations</td></tr>
+            <tr><th><a href="obj/machinery/power/supermatter_crystal.html#var/last_accent_sound">last_accent_sound</a></th><td>cooldown tracker for accent sounds,</td></tr>
+            <tr><th><a href="obj/machinery/power/supermatter_crystal.html#var/n2comp">n2comp</a></th><td>Ranging from 0 to 1, this is used to judge gas composition. It doesn't perfectly match the air around the sm, instead moving up at a rate determined by gas_change_rate per call</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/combined_gas"><aside class="declaration">var </aside>combined_gas
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/2f8fbc28fe75e1d535de7b2cc92c86b0da811230/code/modules/power/supermatter/supermatter.dm#L166">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;power&#x2F;supermatter&#x2F;supermatter.dm 166"/></a></h3>
+        <p>The last air sample's total molar count, will always be above or equal to 0</p><h3 id="var/freonbonus"><aside class="declaration">var </aside>freonbonus
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/2f8fbc28fe75e1d535de7b2cc92c86b0da811230/code/modules/power/supermatter/supermatter.dm#L159">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;power&#x2F;supermatter&#x2F;supermatter.dm 159"/></a></h3>
+        <p>it allows us to remove the power generation while freon is inside the chamber</p><h3 id="var/gas_change_rate"><aside class="declaration">var </aside>gas_change_rate
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/2f8fbc28fe75e1d535de7b2cc92c86b0da811230/code/modules/power/supermatter/supermatter.dm#L141">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;power&#x2F;supermatter&#x2F;supermatter.dm 141"/></a></h3>
+        <p>Determines the rate of positve change in gas comp values</p><h3 id="var/h2obonus"><aside class="declaration">var </aside>h2obonus
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/2f8fbc28fe75e1d535de7b2cc92c86b0da811230/code/modules/power/supermatter/supermatter.dm#L157">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;power&#x2F;supermatter&#x2F;supermatter.dm 157"/></a></h3>
+        <p>used when calculating if the heat resitance from h2o is applied</p><h3 id="var/h2ofixed"><aside class="declaration">var </aside>h2ofixed
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/2f8fbc28fe75e1d535de7b2cc92c86b0da811230/code/modules/power/supermatter/supermatter.dm#L163">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;power&#x2F;supermatter&#x2F;supermatter.dm 163"/></a></h3>
+        <p>fix for the heat penalty, making it work differently at different %</p><h3 id="var/h2omalus"><aside class="declaration">var </aside>h2omalus
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/2f8fbc28fe75e1d535de7b2cc92c86b0da811230/code/modules/power/supermatter/supermatter.dm#L161">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;power&#x2F;supermatter&#x2F;supermatter.dm 161"/></a></h3>
+        <p>used when calculating if the h2o &quot;malus&quot; is applied, the malus is an increase in power, waste gases and heat (wich is bad if not ready) also now used when calculating amount of radiations</p><h3 id="var/last_accent_sound"><aside class="declaration">var </aside>last_accent_sound
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/2f8fbc28fe75e1d535de7b2cc92c86b0da811230/code/modules/power/supermatter/supermatter.dm#L206">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;power&#x2F;supermatter&#x2F;supermatter.dm 206"/></a></h3>
+        <p>cooldown tracker for accent sounds,</p><h3 id="var/n2comp"><aside class="declaration">var </aside>n2comp
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/2f8fbc28fe75e1d535de7b2cc92c86b0da811230/code/modules/power/supermatter/supermatter.dm#L143">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;power&#x2F;supermatter&#x2F;supermatter.dm 143"/></a></h3>
+        <p>Ranging from 0 to 1, this is used to judge gas composition. It doesn't perfectly match the air around the sm, instead moving up at a rate determined by gas_change_rate per call</p></main>
+<footer>
+    tgstation.dme
+    <a href="https://github.com/tgstation/tgstation/tree/2f8fbc28fe75e1d535de7b2cc92c86b0da811230">2f8fbc2</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.2.1</a></footer>
+</body>
+</html>
